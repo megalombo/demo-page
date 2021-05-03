@@ -10241,7 +10241,7 @@ body {
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
+  color: fade(#fff, 100%);
   outline: none;
   background-color: transparent;
 }
@@ -10321,9 +10321,9 @@ body {
 .masthead h1 {
   font-family: mont;
   font-size: 2.5rem;
-  line-height: 2.5rem;
+  line-height: 4rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -10334,8 +10334,8 @@ body {
 }
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 6rem;
+    line-height: 6rem;
   }
 }
 @media (min-width: 992px) {
@@ -10344,8 +10344,8 @@ body {
     padding: 0;
   }
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+    font-size: 8.5rem;
+    line-height: 8.5rem;
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
@@ -10363,7 +10363,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10544,18 +10544,23 @@ body {
 
 @media (min-width: 250px) {
   .re-sizer {
-    font-size: 20px !important;
+    font-size: 40px !important;
+    letter-spacing: 0.1rem !important;
   }
+
 
   .video-size {
     height: 200px;
     width: 100%;
   }
+
+
 }
 
 @media (min-width: 576px) {
   .re-sizer {
-    font-size: 50px !important;
+    font-size: 70px !important;
+    letter-spacing: 0.1rem !important;
   }
 
   .video-size {
@@ -10565,16 +10570,19 @@ body {
 }
 @media (min-width: 768px) {
   .re-sizer {
-    font-size: 70px !important;
+    font-size: 80px !important;
+    letter-spacing: 0.8rem !important;
   }
 }
 @media (min-width: 992px) {
   .re-sizer {
     font-size: 90px !important;
+    letter-spacing: 0.8rem !important;
   }
 }
 @media (min-width: 1200px) {
   .re-sizer {
     font-size: 120px !important;
+    letter-spacing: 0.8rem !important;
   }
 }
