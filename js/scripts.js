@@ -76,7 +76,9 @@ function send(element) {
             "Content-type": "application/json"
         }
     })
-    
+    if(element == 'register') {
+        alert("Su e-mail se registró en la base de datos.");
+    }
     if(element == 'i2ethics') {
         window.location.href = 'https://i2ethics.burninstone.es/';
     }
