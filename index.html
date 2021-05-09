@@ -78,11 +78,11 @@
                             </div>
                             <div class="flip-card-back">
                                 <h6>Carga tu email para acceder al sitio</h6>
-                                <form action="">
-                                    <input type="text" class="input">
-                                    <button class="btn btn-secondary js-scroll-trigger"
+                                
+                                    <input type="text" class="input" id="demoBurnin">
+                                    <button onclick="send('demoBurnin')" class="btn btn-secondary js-scroll-trigger"
                                         style="margin-top: 15px; padding: 10px !important;">Ingresar</button>
-                                </form>
+                                
 
                             </div>
                         </div>
@@ -99,11 +99,11 @@
                             </div>
                             <div class="flip-card-back">
                                 <h6>Carga tu email para acceder al sitio</h6>
-                                <form action="">
-                                    <input type="text" class="input">
-                                    <button class="btn btn-secondary js-scroll-trigger"
+                                
+                                    <input type="text" class="input" id="i2ethics">
+                                    <button onclick="send('i2ethics')" class="btn btn-secondary js-scroll-trigger"
                                         style="margin-top: 15px; padding: 10px !important;">Ingresar</button>
-                                </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -627,11 +627,11 @@
                 <div class="col-md-10 col-lg-8 mx-auto text-center">
                     <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                     <h2 class="text-white mb-5">¿Quieres saber más?</h2>
-                    <form class="form-inline d-flex">
-                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
+                    <div class="form-inline d-flex">
+                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="register" type="email"
                             placeholder="Ingresa tu dirección de email..." />
-                        <button class="btn btn-primary mx-auto" type="submit">SÍ, QUIERO</button>
-                    </form>
+                        <button onclick="send('register')" class="btn btn-primary mx-auto">SÍ, QUIERO</button>
+                    </div>
                 </div>
             </div>
         </div>

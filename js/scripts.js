@@ -3,7 +3,7 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
     */
-    (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
@@ -30,6 +30,7 @@
         }
     });
 
+
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
@@ -49,7 +50,7 @@
         $("#mainNav").removeClass("navbar-shrink");
     }
     });
-
+    
     // // Collapse Navbar
     // var navbarCollapse = function () {
     //     if ($("#mainNav").offset().top > 100) {
@@ -63,3 +64,19 @@
     // // Collapse the navbar when page is scrolled
     // $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+function send(element) {
+
+    fetch('https://burninstone.es/mails/users/', {
+        method: 'POST',
+        body: JSON.stringify({
+            email: document.getElementById(element).value,
+        }),
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
+    .then(response => response.json())
+    .then(json => console.log(json))
+
+}
