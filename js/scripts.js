@@ -67,7 +67,7 @@
 
 function send(element) {
 
-    fetch('https://burninstone.es/mails/users/', {
+    fetch('/mails/users/', {
         method: 'POST',
         body: JSON.stringify({
             email: document.getElementById(element).value,
