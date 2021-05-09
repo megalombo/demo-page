@@ -76,7 +76,12 @@ function send(element) {
             "Content-type": "application/json"
         }
     })
-    .then(response => response.json())
-    .then(json => console.log(json))
+    
+    if(element == 'i2ethics') {
+        window.location.href = 'https://i2ethics.burninstone.es/';
+    }
+    if(element == 'demoBurnin') {
+        window.location.href = 'https://demo.burninstone.es/';
+    }
 
 }
